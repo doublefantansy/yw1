@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#008577</color>
+  <color name="colorPrimaryDark">#00574B</color>
+  <color name="colorAccent">#1DA7ED</color>
+  <color name="white">#ffffff</color>
+  <color name="backGroundGray">#f2f2f2</color>
+  <!--<color name="myGray">#8a8a8a</color>-->
+  <color name="black">#000000</color>
+  <color name="hzBlue">#1DA7ED</color>
+  <color name="yellow">#f9c242</color>
+  <color name="attenceInYellow">#f4a536</color>
+  <color name="attenceOutBlue">#0a3b87</color>
+  <color name="myRed">#FF0000</color>
+  <color name="myGreen">#24d447</color>
+  <color name="myBlue">#1DA7ED</color>
+  <color name="titleGray">#CCCDCDCD</color>
+  <color name="baiduBlue">#801DA7ED</color>
+  <color name="transParentBlue">#401DA7ED</color>
+  <color name="deepBlue">#5c6cbc</color>
+  <color name="getDeliverGreen">#31c68b</color>
+  <color name="bottom_blue">#1296db</color>
+  <color name="bottom_green">#36ab60</color>
+  <color name="bottom_red">#d81e06</color>
+  <color name="bottom_deep_blue">#13227a</color>
+  <color name="bottom_client_blue">#23D1C3</color>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white">
+
+  <LinearLayout
+    android:id="@+id/linearlayout_input"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+    <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+      android:id="@+id/edit_userName"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="45dp"
+      android:inputType="number"
+      android:textSize="@dimen/sp_16"
+      app:met_clearButton="true"
+      app:met_floatingLabel="highlight"
+      app:met_floatingLabelAlwaysShown="true"
+      app:met_floatingLabelText="请输入手机号"
+      app:met_floatingLabelTextSize="18sp"
+      app:met_maxCharacters="11"/>
+
+    <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+      android:id="@+id/edit_passWord"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="45dp"
+      android:inputType="textPassword"
+      android:textSize="@dimen/sp_16"
+      app:met_clearButton="true"
+      app:met_floatingLabel="highlight"
+      app:met_floatingLabelAlwaysShown="true"
+      app:met_floatingLabelText="请输入密码"
+      app:met_floatingLabelTextSize="18sp"/>
+  </LinearLayout>
+
+  <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+    android:id="@+id/button_login"
+    android:layout_width="125dp"
+    android:layout_height="40dp"
+    android:layout_marginTop="30dp"
+    android:layout_below="@id/linearlayout_input"
+    android:layout_centerHorizontal="true"
+    android:text="登录"
+    android:textColor="@color/xui_default_round_btn_white_text"
+    android:textSize="16sp"
+    app:rb_backgroundColor="@color/hzBlue"/>
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="40dp"
+    android:layout_marginLeft="45dp"
+    android:layout_marginRight="45dp"
+    android:layout_above="@id/linearlayout_input">
+
+    <ImageView
+      android:layout_width="38dp"
+      android:layout_height="48dp"
+      android:src="@mipmap/applogo"/>
+
+    <TextView
+      android:textStyle="bold"
+      android:layout_width="wrap_content"
+      android:layout_height="48dp"
+      android:layout_marginLeft="7dp"
+      android:gravity="center"
+      android:text="惠泽运维"
+      android:textSize="25sp"/>
+  </LinearLayout>
+</RelativeLayout>

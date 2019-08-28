@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.ClientInsertActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white">
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/clientName"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            app:sDividerLineType="none"
+            app:sLeftTextIsBold="true"
+            app:sLeftTextSize="18sp"
+            app:sLeftTextString="客户名称 *"
+            app:sRightTextSize="18sp"
+            app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+            android:id="@+id/clientNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:textSize="18sp"
+            app:met_autoValidate="true"
+            app:met_hideUnderline="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            app:sDividerLineType="none"
+            app:sLeftTextIsBold="true"
+            app:sLeftTextSize="18sp"
+            app:sLeftTextString="客户类型 *"
+            app:sRightTextSize="18sp"
+            app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.spinner.materialspinner.MaterialSpinner
+            android:id="@+id/clientTypeChoose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            app:sDividerLineType="none"
+            app:sLeftTextIsBold="true"
+            app:sLeftTextSize="18sp"
+            app:sLeftTextString="项目类型 *"
+            app:sRightTextSize="18sp"
+            app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.spinner.materialspinner.MaterialSpinner
+            android:id="@+id/projectTypeChoose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            app:sDividerLineType="none"
+            app:sLeftTextIsBold="true"
+            app:sLeftTextSize="18sp"
+            app:sLeftTextString="所属项目 *"
+            app:sRightTextSize="18sp"
+            app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.spinner.materialspinner.MaterialSpinner
+            android:id="@+id/projectChoose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white">
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            app:sDividerLineType="none"
+            app:sLeftTextIsBold="true"
+            app:sLeftTextSize="18sp"
+            app:sLeftTextString="主联系人姓名"
+            app:sRightTextSize="18sp"
+            app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+            android:id="@+id/contactPersonEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:textSize="18sp"
+            app:met_hideUnderline="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            app:sDividerLineType="none"
+            app:sLeftTextIsBold="true"
+            app:sLeftTextSize="18sp"
+            app:sLeftTextString="主联系人部门"
+            app:sRightTextSize="18sp"
+            app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+            android:id="@+id/contactPersonSectionEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:textSize="18sp"
+            app:met_hideUnderline="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            app:sDividerLineType="none"
+            app:sLeftTextIsBold="true"
+            app:sLeftTextSize="18sp"
+            app:sLeftTextString="主联系人电话"
+            app:sRightTextSize="18sp"
+            app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+            android:id="@+id/contactPersonTelEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:textSize="18sp"
+            app:met_hideUnderline="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            app:sDividerLineType="none"
+            app:sLeftTextIsBold="true"
+            app:sLeftTextSize="18sp"
+            app:sLeftTextString="主联系人岗位"
+            app:sRightTextSize="18sp"
+            app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+            android:id="@+id/contactPersonJobEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:textSize="18sp"
+            app:met_hideUnderline="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white">
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            app:sDividerLineType="none"
+            app:sLeftTextIsBold="true"
+            app:sLeftTextSize="18sp"
+            app:sLeftTextString="地址"
+            app:sRightTextSize="18sp"
+            app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+            android:id="@+id/addressEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:textSize="18sp"
+            app:met_hideUnderline="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <hzkj.cc.mybottomnavigation.MyBottomNavigation
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></hzkj.cc.mybottomnavigation.MyBottomNavigation>
+
+    <hzkj.cc.stateful.StateFulLayout
+        android:id="@+id/stateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <hzkj.cc.ccrecyclerview.CcRrefreshAndLoadMoreRecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></hzkj.cc.ccrecyclerview.CcRrefreshAndLoadMoreRecyclerView>
+    </hzkj.cc.stateful.StateFulLayout>
+</LinearLayout>

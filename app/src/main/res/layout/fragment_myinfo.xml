@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/toolbarcolor">
+
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                    android:id="@+id/icon"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:clickable="true"
+                    android:src="@drawable/ic_personfill2"
+                    app:riv_border_color="@color/transparent"
+                    app:riv_border_width="1px"
+                    app:riv_is_circle="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_42"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/icon"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="查看或编辑个人信息"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_150"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:background="@drawable/commonstyle">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:src="@drawable/ic_daichuli" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_5"
+                        android:gravity="center"
+                        android:text="待处理"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/attence"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:src="@drawable/ic_kaoqin_3" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_5"
+                        android:gravity="center"
+                        android:text="待考勤"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_15"
+                        android:src="@drawable/ic_icon_hetongshenhe" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_5"
+                        android:gravity="center"
+                        android:text="待审核"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_250"
+                android:layout_marginRight="@dimen/dp_20"
+                android:background="@drawable/toolbarcolor1" />
+        </FrameLayout>
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/updatePassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextSize="@dimen/sp_16"
+            app:sLeftTextString="修改密码"
+            app:sLeftTvDrawableLeft="@drawable/ic_drxx25"
+            app:sRightTvDrawableRight="@drawable/ic_fanhui_gray"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextSize="@dimen/sp_16"
+            app:sLeftTextString="考勤"
+            app:sLeftTvDrawableLeft="@drawable/ic_kaoqin_4"
+            app:sRightTvDrawableRight="@drawable/ic_fanhui_gray"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/switchUser"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextSize="@dimen/sp_16"
+            app:sLeftTextString="切换帐号"
+            app:sLeftTvDrawableLeft="@drawable/ic_qiehuanzhanghao"
+            app:sRightTvDrawableRight="@drawable/ic_fanhui_gray"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/setting"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/dp_15"
+            app:sLeftTextSize="@dimen/sp_16"
+            app:sLeftTextString="设置"
+            app:sLeftTvDrawableLeft="@drawable/ic_shezhi_2"
+            app:sRightTvDrawableRight="@drawable/ic_fanhui_gray"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+    </LinearLayout>
+
+    <com.xuexiang.xui.widget.progress.loading.MiniLoadingView
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="40dp"
+        android:visibility="gone" />
+</RelativeLayout>

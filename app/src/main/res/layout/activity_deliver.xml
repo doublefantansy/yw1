@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.xuexiang.xui.widget.actionbar.TitleBar
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbarcolor"
+            android:visibility="gone"
+            app:tb_actionTextSize="20sp"
+            app:tb_barHeight="55dp"
+            app:tb_immersive="true"
+            app:tb_leftImageResource="@drawable/ic_fanhui"
+            app:tb_sideTextSize="20sp"
+            app:tb_titleText="物流管理"
+            app:tb_titleTextSize="20sp" />
+
+        <hzkj.cc.my_fragment_viewpager.FragmentViewPager
+            android:id="@+id/fragmentViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></hzkj.cc.my_fragment_viewpager.FragmentViewPager>
+
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

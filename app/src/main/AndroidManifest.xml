@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="hzkj.cc.yw">
+
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <!-- 这个权限用于访问GPS定位 -->
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+  <!-- 用于读取手机当前的状态 -->
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+  <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <!-- 访问网络，网络定位需要上网 -->
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <!-- SD卡读取权限，用户写入离线定位数据 -->
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/applogo"
+    android:label="@string/app_name"
+    android:name=".config.MyApplication"
+    android:resizeableActivity="true"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <activity android:name=".ui.activity.MainActivity"/>
+
+    <meta-data
+      android:name="android.max_aspect"
+      android:value="2.1"/>
+    <meta-data
+      android:name="com.baidu.lbsapi.API_KEY"
+      android:value="KHBg6GSl5HovUhMBWtjWLhXhzCGssZNr"/>
+    <meta-data
+      android:name="design_width_in_dp"
+      android:value="360"/>
+    <meta-data
+      android:name="design_height_in_dp"
+      android:value="640"/>
+
+    <service
+      android:enabled="true"
+      android:name="com.baidu.location.f"
+      android:process=":remote">
+      <intent-filter>
+        <action android:name="com.baidu.location.service_v2.2"></action>
+      </intent-filter>
+    </service>
+
+    <activity android:name=".ui.activity.WelcomeActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity android:name=".ui.activity.LoginActivity"/>
+    <activity android:name=".ui.activity.AttenceActivity"/>
+    <activity android:name=".ui.activity.ClientEditActivity"/>
+    <activity android:name=".ui.activity.ClientInsertActivity"/>
+    <activity android:name=".ui.activity.ClientInfoActivity"/>
+    <activity android:name=".ui.activity.ClientManageActivity"/>
+    <activity android:name=".ui.activity.RentCarManageActivity"/>
+    <activity android:name=".ui.activity.RentCarActivity"/>
+    <activity android:name=".ui.activity.ReviewActivity"/>
+    <activity android:name=".ui.activity.RentCarReviewActivity"/>
+    <activity android:name=".ui.activity.MyInfoContentActivity"/>
+    <activity android:name=".ui.activity.UpdatePasswordActivity"/>
+    <activity android:name=".ui.activity.ApplyBuyActivity"></activity>
+    <activity android:name=".ui.activity.ApplyBuyReviewActivity"></activity>
+    <activity android:name=".ui.activity.GoToRepairActivity"></activity>
+    <activity android:name=".ui.activity.GoToRepairDetailActivity"></activity>
+    <activity android:name=".ui.activity.DeliverActivity"></activity>
+    <activity android:name=".ui.activity.DeliverInsertActivity"></activity>
+    <activity android:name=".ui.activity.DeliverSingleDetailActivity"></activity>
+    <activity android:name=".ui.activity.AttenceMapActivity"></activity>
+    <activity android:name=".ui.activity.HomeBannerWebActivity"></activity>
+    <activity android:name=".ui.activity.DeliverProcedureDetailActivity"></activity>
+    <activity android:name=".ui.activity.RentCarDetailActivity"></activity>
+    <activity android:name=".ui.activity.PhotoActivity"></activity>
+    <activity android:name=".ui.activity.WorkOrderActivity"></activity>
+    <activity android:name=".ui.activity.WorkOrderProcessActivity"
+      android:windowSoftInputMode="adjustPan"></activity>
+    <activity
+      android:name=".ui.activity.WorkOrderInsertActivity"
+      android:windowSoftInputMode="adjustPan"></activity>
+    <activity
+      android:name="me.iwf.photopicker.PhotoPickerActivity"
+      android:theme="@style/SelectPicAppTheme"
+      />
+    <activity
+      android:name=".ui.activity.RentCarReviewDetailActivity"
+      android:windowSoftInputMode="adjustPan"></activity>
+  </application>
+</manifest>

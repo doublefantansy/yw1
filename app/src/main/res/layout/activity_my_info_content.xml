@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MyInfoContentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbarcolor"
+            android:paddingTop="@dimen/dp_20">
+
+            <com.xuexiang.xui.widget.actionbar.TitleBar
+                android:id="@+id/bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tb_actionTextSize="20sp"
+                app:tb_barHeight="55dp"
+                app:tb_leftImageResource="@drawable/ic_fanhui"
+                app:tb_sideTextSize="20sp"
+                app:tb_titleText="个人信息"
+                app:tb_titleTextSize="20sp" />
+        </LinearLayout>
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            app:sLeftTextSize="@dimen/sp_18"
+            app:sLeftTextString="头像"
+            app:sRightTextSize="@dimen/sp_16"
+            app:sRightTvDrawableRight="@drawable/ic_iconfontjiantou">
+
+            <com.xuexiang.xui.widget.imageview.RadiusImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/dp_32"
+                android:layout_height="@dimen/dp_32"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_50"
+                android:clickable="true"
+                android:src="@drawable/ic_geren2"
+                app:riv_border_color="@color/transparent"
+                app:riv_border_width="1px"
+                app:riv_is_circle="true" />
+        </com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            app:sLeftTextSize="@dimen/sp_18"
+            app:sLeftTextString="名字"
+            app:sRightTextSize="@dimen/sp_18"
+            app:sRightTextString="21312312"
+            app:sRightTvDrawableRight="@drawable/ic_iconfontjiantou"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+        <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+            android:id="@+id/sex"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            app:sLeftTextSize="@dimen/sp_18"
+            app:sLeftTextString="性别"
+            app:sRightTextSize="@dimen/sp_18"
+            app:sRightTextString="21312312"
+            app:sRightTvDrawableRight="@drawable/ic_iconfontjiantou"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+    </LinearLayout>
+
+    <com.xuexiang.xui.widget.progress.loading.MiniLoadingView
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="40dp"
+        android:visibility="gone" />
+</RelativeLayout>

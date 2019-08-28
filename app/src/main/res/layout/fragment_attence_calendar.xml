@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/white">
+
+        <TextView
+          android:id="@+id/tv_month_day"
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:paddingLeft="16dp"
+          android:gravity="center_vertical"
+          android:text="6月20日"
+          android:textColor="#000000"
+          android:textSize="26sp"/>
+
+        <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_toRightOf="@+id/tv_month_day"
+          android:paddingTop="12dp"
+          android:paddingBottom="12dp"
+          android:paddingLeft="6dp"
+          android:paddingRight="6dp"
+          android:orientation="vertical">
+
+          <TextView
+            android:id="@+id/tv_year"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2019"
+            android:textColor="#000000"
+            android:textSize="10sp"/>
+        </LinearLayout>
+      </RelativeLayout>
+
+      <com.haibin.calendarview.CalendarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <com.haibin.calendarview.CalendarView
+          android:id="@+id/calendarView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="#fff"
+          app:calendar_height="46dp"
+          app:calendar_padding="10dp"
+          app:current_month_lunar_text_color="#CFCFCF"
+          app:current_month_text_color="#333333"
+          app:min_year="2004"
+          app:month_view="hzkj.cc.yw.SimpleMonthView"
+          app:month_view_show_mode="mode_only_current"
+          app:other_month_text_color="#e1e1e1"
+          app:scheme_text="假"
+          app:scheme_text_color="#333"
+          app:scheme_theme_color="#333"
+          app:selected_text_color="#fff"
+          app:selected_theme_color="#333"
+          app:week_background="#fff"
+          app:week_text_color="#111"
+          app:week_view="hzkj.cc.yw.SimpleWeekView"
+          app:year_view_day_text_color="#333333"
+          app:year_view_day_text_size="9sp"
+          app:year_view_month_text_color="#ff0000"
+          app:year_view_month_text_size="20sp"
+          app:year_view_scheme_color="#f17706"/>
+        　
+      </com.haibin.calendarview.CalendarLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_1"
+        android:layout_marginBottom="@dimen/dp_1"
+        android:paddingTop="10dp"
+        android:paddingBottom="@dimen/dp_10"
+        android:background="@color/white">
+
+        <RelativeLayout
+          android:layout_width="@dimen/dp_0"
+          android:layout_height="wrap_content"
+          android:layout_weight="1">
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <hzkj.cc.yw.ExampleView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              app:color="@color/myGreen"/>
+
+            <TextView
+              android:textStyle="bold"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/dp_3"
+              android:layout_gravity="center_vertical"
+              android:text="正常"
+              android:textSize="@dimen/sp_16"/>
+          </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+          android:layout_width="@dimen/dp_0"
+          android:layout_height="wrap_content"
+          android:layout_weight="1">
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <hzkj.cc.yw.ExampleView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              app:color="@color/myGray"/>
+
+            <TextView
+              android:textStyle="bold"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/dp_3"
+              android:layout_gravity="center_vertical"
+              android:text="未打卡"
+              android:textSize="@dimen/sp_16"/>
+          </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+          android:layout_width="@dimen/dp_0"
+          android:layout_height="wrap_content"
+          android:layout_weight="1">
+
+          <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <hzkj.cc.yw.ExampleView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              app:color="@color/red"/>
+
+            <TextView
+              android:textStyle="bold"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/dp_3"
+              android:layout_gravity="center_vertical"
+              android:text="迟到/早退"
+              android:textSize="@dimen/sp_16"/>
+          </LinearLayout>
+        </RelativeLayout>
+      </LinearLayout>
+
+      <hzkj.cc.ccrecyclerview.CcRrefreshAndLoadMoreRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></hzkj.cc.ccrecyclerview.CcRrefreshAndLoadMoreRecyclerView>
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

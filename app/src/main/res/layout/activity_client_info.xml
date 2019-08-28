@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+
+  <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+    android:id="@+id/clientName"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="15dp"
+    app:sLeftTextIsBold="true"
+    app:sLeftTextSize="18sp"
+    app:sLeftTextString="客户名称"
+    app:sRightTextSize="18sp"
+    app:sRightTextString="222"
+    app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+  <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+    android:id="@+id/clientType"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    app:sLeftTextIsBold="true"
+    app:sLeftTextSize="18sp"
+    app:sLeftTextString="客户类型"
+    app:sRightTextSize="18sp"
+    app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+  <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+    android:id="@+id/projectType"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:visibility="gone"
+    app:sLeftTextIsBold="true"
+    app:sLeftTextSize="18sp"
+    app:sLeftTextString="项目类型"
+    app:sRightTextSize="18sp"
+    app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+  <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+    android:id="@+id/projectName"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginBottom="15dp"
+    app:sLeftTextIsBold="true"
+    app:sLeftTextSize="18sp"
+    app:sLeftTextString="所属项目"
+    app:sRightTextSize="18sp"
+    app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+  <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+    android:id="@+id/contactPerson"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    app:sLeftTextIsBold="true"
+    app:sLeftTextSize="18sp"
+    app:sLeftTextString="主联系人"
+    app:sRightTextSize="18sp"
+    app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+  <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+    android:id="@+id/contactPersonSection"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    app:sLeftTextIsBold="true"
+    app:sLeftTextSize="18sp"
+    app:sLeftTextString="主联系人所属部门"
+    app:sRightTextSize="18sp"
+    app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+  <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+    android:id="@+id/contactPersonTel"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    app:sLeftTextIsBold="true"
+    app:sLeftTextSize="18sp"
+    app:sLeftTextString="主联系人电话"
+    app:sRightTextSize="18sp"
+    app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+  <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+    android:id="@+id/contactPersonJob"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginBottom="15dp"
+    app:sLeftTextIsBold="true"
+    app:sLeftTextSize="18sp"
+    app:sLeftTextString="主联系人岗位"
+    app:sRightTextSize="18sp"
+    app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+
+  <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+    android:id="@+id/address"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    app:sLeftTextIsBold="true"
+    app:sLeftTextSize="18sp"
+    app:sLeftTextString="地址"
+    app:sRightTextSize="18sp"
+    app:sTextViewDrawablePadding="5dp"></com.xuexiang.xui.widget.textview.supertextview.SuperTextView>
+</LinearLayout>
